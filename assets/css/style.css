@@ -7,6 +7,18 @@ body {
 .container {
     margin: 0 auto;
     background-color: #252526;
-    border: 2px solid #FFC107;
+    border: 2px solid #ffc107;
     border-radius: 20px;
+    box-shadow: 0 0 15px rgba(255, 193, 7, .5);
+}
+
+.btn-warning {
+    transition: all .4s;
+}
+
+.btn-warning:hover {
+    background-color: #252526;
+    color: #ffc107;
+    border: 1px solid #ffc107;
+    transform: scale(1.1);
 }
