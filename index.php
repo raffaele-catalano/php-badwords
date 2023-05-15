@@ -25,25 +25,25 @@
     
     <div class="container d-flex justify-content-center align-items-center flex-column my-3 p-3">
 
-        <h1 class="text-center mb-2">Welcome to Paragraph Checker <i class="fa-solid fa-check"></i></h1>
+        <h1 class="text-center mb-4">Welcome to Paragraph Checker <i class="fa-solid fa-check"></i></h1>
         
-        <form>
+        <form class="w-50" method="$_GET" action="landing-page.php">
             
             <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="exampleInputEmail1" class="form-label">Paragraph</label>
+                <textarea name="paragraph" class="form-control" id="paragraph" aria-describedby="paragraph"> </textarea>
 
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
             </div>
 
             <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+                <label for="exampleInputPassword1" class="form-label">Word to Censure</label>
+                <input name="words" type="text" class="form-control" id="censure">
             </div>
 
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                <label class="form-check-label" for="exampleCheck1">Accept Terms & Conditions</label>
             </div>
 
             <button type="submit" class="btn btn-warning">Submit</button>
