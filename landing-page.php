@@ -38,7 +38,7 @@ $paragraphReviewed  = str_replace(strtolower($wordToCensure), '*****', strtolowe
     <div class="container d-flex justify-content-center align-items-center flex-column my-4 p-3">
 
     <h1 class="fw-bold text-center mb-4">Here's your Result</h1>
-
+    
     <div class="paragraph-container my-3">
         <h3 class="mb-2 text-center">Paragraph:</h3>
         <h5 class="text-center mb-3"><?php echo ucfirst($paragraphReviewed) ?></h5>
