@@ -1,12 +1,13 @@
 <?php
 
 
-$paragraph      = $_GET['paragraph'];
-$wordToCensure  = $_GET['words'];
+$paragraph          = $_GET['paragraph'];
+$wordToCensure      = $_GET['words'];
+$paragraphReviewed  = str_replace($wordToCensure, '***', $paragraph);
 
 
 // 
-var_dump([$paragraph, $wordToCensure]);
+// var_dump([$paragraph, $wordToCensure]);
 
 ?>
 
@@ -36,9 +37,18 @@ var_dump([$paragraph, $wordToCensure]);
 
     <div class="container d-flex justify-content-center align-items-center flex-column my-3 p-3">
 
-    <h1 class="text-center mb-4">Here's your Result</h1>
+    <h1 class="fw-bold text-center mb-4">Here's your Result</h1>
 
-    
+    <div class="paragraph-container my-3">
+        <h3 class="mb-2 text-center">Paragraph:</h3>
+        <h5 class="text-center mb-3"><?php echo $paragraphReviewed ?></h5>
+        <p class="text-center text-warning"> <em>Your Paragraph has <?php echo strlen ($paragraph)?></em>  types</p>
+    </div>
+
+    <div class="words-container my-3">
+        <h3 class="mb-2 text-center">Word Censored:</h3>
+        <h4 class="text-center text-danger"><?php echo $wordToCensure ?></h4>
+    </div>
 
     </div>
 

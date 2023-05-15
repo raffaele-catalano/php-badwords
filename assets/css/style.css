@@ -7,11 +7,6 @@ body {
 .container {
     margin: 0 auto;
     background-color: #252526;
-    /* debug */
     border: 2px solid #FFC107;
     border-radius: 20px;
-}
-
-.debug {
-    border: 1px solid red;
 }
