@@ -40,15 +40,24 @@ $paragraphReviewed  = str_replace(strtolower($wordToCensure), '*****', strtolowe
     <h1 class="fw-bold text-center mb-4">Here's your Result</h1>
     
     <div class="paragraph-container my-3">
-        <h3 class="mb-2 text-center">Paragraph:</h3>
+        <h3 class="mb-2 text-center">Original Paragraph:</h3>
+        <h5 class="text-center mb-3"><?php echo ucfirst($paragraph) ?></h5>
+        <p class="text-center text-warning"> <em>Paragraph has <?php echo strlen ($paragraph)?></em>  letters</p>
+    </div>
+
+    <div class="paragraph-container my-3">
+        <h3 class="mb-2 text-center">Paragraph Reviewed:</h3>
         <h5 class="text-center mb-3"><?php echo ucfirst($paragraphReviewed) ?></h5>
-        <p class="text-center text-warning"> <em>Your Paragraph has <?php echo strlen ($paragraph)?></em>  types</p>
+        <p class="text-center text-warning"> <em>Paragraph has span<?php echo strlen ($paragraphReviewed)?></em>  letters</p>
     </div>
 
     <div class="words-container my-3">
         <h3 class="mb-2 text-center">Word Censored:</h3>
         <h4 class="text-center text-danger"><?php echo $wordToCensure ?></h4>
     </div>
+
+    <a href="./index.html"><button type="submit" class="btn btn-warning">Back to Homepage</button></a>
+    
 
     </div>
 
